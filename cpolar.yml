@@ -1,0 +1,34 @@
+# Write to /data/data/com.termux/files/usr/etc/cpolar/cpolar.yml
+authtoken: # Copy From https://dashboard.cpolar.com/get-started
+tunnels:
+  cpolar:
+    id: 0b2bfd8f-9def-4d9a-8afe-28afae7a5ee2
+    proto: http
+    addr: "9200"
+    inspect: "false"
+    bind_tls: "false"
+    region: cn_top
+    disable_keep_alives: "false"
+    redirect_https: "false"
+    start_type: enable
+  proxy:
+    id: fda9f27b-60d0-4df1-8c9b-6575e6d706a1
+    proto: tcp
+    addr: "8888"
+    inspect: "false"
+    bind_tls: both
+    region: cn_top
+    disable_keep_alives: "false"
+    redirect_https: "false"
+    start_type: enable
+  ssh:
+    id: d888b0e6-3486-4bb2-af48-ad982684b4e6
+    proto: tcp
+    addr: "8022"
+    inspect: "false"
+    bind_tls: both
+    region: cn_vip_top
+    disable_keep_alives: "false"
+    redirect_https: "false"
+    start_type: enable
+email: # Your Email
